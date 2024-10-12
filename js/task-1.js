@@ -10,4 +10,11 @@ const user = {
   age: 20,
   hobby: 'tennis',
   premium: true,
+};
+user.mood = 'Happy';
+user.hobby = 'skydiving';
+user.premium = false;
+const keys = Object.keys(user);
+for (const key of keys) {
+  console.log(`${key}: ${user[key]}`);
 }
